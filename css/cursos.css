@@ -1,0 +1,15 @@
+.cursos-container {
+      padding: 50px 80px;
+      background: var(--preto);
+}
+
+
+.cursos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.cursos-item {
+    background: var(--branco);
+}

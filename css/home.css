@@ -1,0 +1,68 @@
+.home {
+    display: flex;
+    margin: 50px 80px;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    background: var(--branco);
+    border-radius: 5px;
+    padding: 100px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+}
+
+/* .home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+} */
+
+.home-content h1 {
+    font-size: 64px;
+}
+
+.home-content span {
+    color:var(--verde);
+}
+
+.home-content p {
+    font-size: 24px;
+    margin: 10px 30px 30px 0;
+}
+.home-content [href="#sobre"] {
+    border-radius: 5px;
+    background: var(--verde);
+    color: var(--branco);
+    padding: 10px 30px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    
+}
+
+.home-photo img {
+    box-shadow: 20px 20px 0px 0px var(--verde);
+    width: 100%;
+}
+
+.rede-sociais {
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+}
+
+
+
+@media (max-width: 900px) {
+
+    .home {
+        flex-direction: column;
+    }
+    .home-content h1 {
+        font-size: 40px;
+    }
+    .home-content p {
+        font-size: 16px;
+    }
+
+
+}

@@ -1,0 +1,28 @@
+@import 'menu.css';
+@import 'home.css';
+@import 'sobre.css';
+@import 'cursos.css';
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    background: none;
+    border: none;
+}
+
+:root {
+    --verde: #aeff00 ;
+    --preto: #1b1b1b;
+    --branco: #fff;
+    --cinza: #F8F8F8;
+    --azul-forte:#14213D;
+}
+
+body {
+    background: var(--cinza);
+    
+}
