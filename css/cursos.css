@@ -3,13 +3,56 @@
       background: var(--preto);
 }
 
-
 .cursos {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
 }
+/*titulo*/
+#cursos {
+    font-size: 64px;
+    color: var(--branco);
+}
+
+#cursos > span {
+    color: var(--verde);
+}
 
 .cursos-item {
     background: var(--branco);
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.cursos-item > h3 {
+    font-size: 24px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.cursos-item > h3::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--verde);
+    right:0px;
+    cursor: pointer;
+
+
+}
+.conteudo-cursos {
+    display: none;
+}
+
+.conteudo-cursos > p {
+font-size: 15px;    
+}
+
+.conteudo-cursos > a {
+    font-size: 16px;
+    color: var(--verde);
+    font-weight: 700;
 }
