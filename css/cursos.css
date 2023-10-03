@@ -3,21 +3,19 @@
     background:var(--verde);
       
 }
-
-#cursos {
+.cursos {
     font-size: 64px;
+    margin: 100px 0px 30px 0px;
 }
-
-#cursos > span {
+.cursos > span {
     color: var(--branco);
+
 }
-
-
 dt {
     background: var(--branco);
     border-radius: 5px;
     font-size: 24px;
-    padding: 5px 20px;
+    padding: 15px 20px;
     font-weight: bold;
     position: relative;
     display: flex;
@@ -29,8 +27,8 @@ dt {
 dt::before {
     content: "";
     position: absolute;
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     background: var(--verde);
     border-radius: 50%;
     right: 20px;
@@ -39,13 +37,14 @@ dt::before {
 
 dt.activeAccordion::before {
     height: 5px;
-    width: 20px;
+    width: 30px;
     border-radius: 5px;
+    background: var(--preto);
 }
 
 .cursos-accordion dd {
     display: none;
-    padding: 0px 20px;
+    padding: 0px 20px 30px 20px;
     background: var(--branco);
 }
 
@@ -59,10 +58,15 @@ dt.activeAccordion::before {
 dd p {
     padding: 5px 0px;
     color: var(--preto);
+    font-size: 16px;
 }
 
 dd a {
-    color: var(--preto);
+    color: var(--verde);
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    padding: 20px 0px;
 }
 
 @keyframes slideDown {
