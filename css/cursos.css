@@ -62,6 +62,9 @@ dd p {
 }
 
 dd a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     color: var(--verde);
     font-weight: 600;
     font-size: 18px;
