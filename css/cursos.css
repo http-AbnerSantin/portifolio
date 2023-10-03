@@ -1,52 +1,76 @@
 .cursos-container {
-      padding: 50px 80px;
-      background: var(--preto);
+    padding: 50px 80px;
+    background:var(--verde);
+      
 }
 
-.cursos {
-
-}
-/*titulo*/
 #cursos {
     font-size: 64px;
-    color: var(--branco);
 }
 
 #cursos > span {
-    color: var(--verde);
-}
-/*titulo*/
-
-.content {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    color: var(--branco);
 }
 
-.accordion_item {
+
+dt {
+    background: var(--branco);
     border-radius: 5px;
-}
-.accordion_header {
+    font-size: 24px;
+    padding: 5px 20px;
+    font-weight: bold;
+    position: relative;
     display: flex;
     align-items: center;
-    font-size: 24px;
-    font-weight: bold;
-    background: var(--branco);
-    position: relative;
+    margin: 20px 50px 0px 50px;   
     cursor: pointer;
-    padding: 10px;
+}
+
+dt::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: var(--verde);
+    border-radius: 50%;
+    right: 20px;
+    transition: .5s;
+}
+
+dt.activeAccordion::before {
+    height: 5px;
+    width: 20px;
     border-radius: 5px;
 }
 
-.accordion_header::before {
-    content: "";
-    height: 10px;
-    position: absolute;
-    width: 10px;
-    background: var(--verde);
-    border-radius: 50%;
-    right: 0px;
-    margin: 10px;
+.cursos-accordion dd {
+    display: none;
+    padding: 0px 20px;
+    background: var(--branco);
 }
 
+.cursos-accordion dd.activeAccordion {
+    display: block;
+    animation: slideDown .3s forwards;
+    margin: -5px 50px 40px 50px;
+    border-radius: 5px;
+}
+
+dd p {
+    padding: 5px 0px;
+    color: var(--preto);
+}
+
+dd a {
+    color: var(--preto);
+}
+
+@keyframes slideDown {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
