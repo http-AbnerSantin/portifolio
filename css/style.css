@@ -3,6 +3,10 @@
 @import 'sobre.css';
 @import 'cursos.css';
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     box-sizing: border-box;
     padding: 0px;
@@ -16,7 +20,7 @@
 
 :root {
     --verde: #aeff00 ;
-    --preto: #1b1b1b;
+    --preto: #000;
     --branco: #fff;
     --cinza: #F8F8F8;
     --azul-forte:#14213D;
@@ -24,5 +28,18 @@
 
 body {
     background: var(--cinza);
+    height: 3000px;
     
+}
+
+.js-scroll {
+    opacity: 0;
+    transition: .3s;
+    transform: translate3d(-30px, 0, 0);
+}
+
+.js-scroll.animarEntrada{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+
 }

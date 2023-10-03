@@ -4,9 +4,7 @@
 }
 
 .cursos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
+
 }
 /*titulo*/
 #cursos {
@@ -17,42 +15,38 @@
 #cursos > span {
     color: var(--verde);
 }
+/*titulo*/
 
-.cursos-item {
-    background: var(--branco);
-    border-radius: 5px;
-    padding: 30px;
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.cursos-item > h3 {
-    font-size: 24px;
-    position: relative;
+.accordion_item {
+    border-radius: 5px;
+}
+.accordion_header {
     display: flex;
     align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    background: var(--branco);
+    position: relative;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
 }
 
-.cursos-item > h3::after {
+.accordion_header::before {
     content: "";
+    height: 10px;
     position: absolute;
     width: 10px;
-    height: 10px;
-    border-radius: 50%;
     background: var(--verde);
-    right:0px;
-    cursor: pointer;
-
-
-}
-.conteudo-cursos {
-    display: none;
+    border-radius: 50%;
+    right: 0px;
+    margin: 10px;
 }
 
-.conteudo-cursos > p {
-font-size: 15px;    
-}
 
-.conteudo-cursos > a {
-    font-size: 16px;
-    color: var(--verde);
-    font-weight: 700;
-}

@@ -1,6 +1,6 @@
 .sobre-container {
     padding: 50px 80px;
-    background: var(--verde);
+    background: var(--preto);
 
 }
 
@@ -8,6 +8,8 @@
     display: flex;
     gap: 20px;
     justify-content: space-between;
+    margin-top: 70px;
+    align-items: center;
 
 }
 
@@ -15,15 +17,15 @@
     max-width: 500px;
     min-height: 300px;
     padding: 20px;
-    background: var(--branco);
     border-radius: 5px;
-    border: solid 2px var(--preto);
+    
 }
 
 .sobre-container h2 {
     font-size: 64px;
     text-transform: uppercase;
     color: var(--branco);
+    margin: 20px;
 }
 
 .sobre li h3 {
@@ -31,17 +33,18 @@
     font-weight: 700;
     letter-spacing: 0.48px;
     font-weight: bold;
+    color: var(--branco);
+    margin: 5px 0 5px 0;
 }
 
 .sobre li p {
-    color:var(--preto);
+    color:var(--cinza);
     font-size: 16px;
-    font-weight: 500;
     letter-spacing: 0.8px;
 }
 
 .sobre-container span {
-    color: var(--preto);
+    color: var(--verde);
 }
 
 @media (max-width: 1000px) {

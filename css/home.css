@@ -2,8 +2,8 @@
     display: flex;
     margin: 50px 80px;
     align-items: center;
-    justify-content: center;
-    gap: 40px;
+    justify-content: space-around;
+    gap: 80px;
     background: var(--branco);
     border-radius: 5px;
     padding: 100px;
@@ -41,7 +41,7 @@
 
 .home-photo img {
     box-shadow: 20px 20px 0px 0px var(--verde);
-    width: 450px;
+    width: 500px;
 }
 
 .rede-sociais {
