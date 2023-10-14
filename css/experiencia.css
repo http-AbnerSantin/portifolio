@@ -1,16 +1,32 @@
 .experiencia {
     background: var(--verde);
-    padding: 200px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
 }
 
+.experiencia > img {
+    max-width: 100%;
+}
+
+.content-experiencia {
+    padding: 0 80px 0 30px;
+}
 .experiencia h2{
     font-size: 64px;
+    color: var(--branco);
 }
 
+
 .experiencia h2 > span {
-    color: var(--branco);
+    color: var(--preto);
 }
 
 .experiencia p {
     font-size: 24px;
+    letter-spacing: 1px;
+    font-weight:500;
+    margin-top: 20px;
 }

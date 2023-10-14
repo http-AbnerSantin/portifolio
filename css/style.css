@@ -44,3 +44,12 @@ body {
     transform: translate3d(0, 0, 0);
 
 }
+
+.teste {
+    color: red;
+    font-size: 30px;
+}
+
+.tituloteste {
+    color: blue;
+}
