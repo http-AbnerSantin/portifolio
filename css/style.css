@@ -28,7 +28,7 @@ html {
 }
 
 body {
-    background: var(--cinza);
+
     height: 3000px;
     
 }
@@ -43,13 +43,4 @@ body {
     opacity: 1;
     transform: translate3d(0, 0, 0);
 
-}
-
-.teste {
-    color: red;
-    font-size: 30px;
-}
-
-.tituloteste {
-    color: blue;
 }

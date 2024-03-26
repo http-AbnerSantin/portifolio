@@ -38,6 +38,11 @@
     
 }
 
+.menu-item:hover {
+    color: var(--verde) ;
+    transition: .5s;
+}
+
 /*
 .menu-hamburguer {
     display: none;
